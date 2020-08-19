@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gvMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="3"
+    android:rowCount="5">
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/etA"
+        android:layout_width="122dp"
+        android:layout_height="41dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="fill"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0" />
+
+    <Spinner
+        android:id="@+id/spA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/etB"
+        android:layout_width="122dp"
+        android:layout_height="41dp"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_gravity="fill"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        />
+
+    <Spinner
+        android:id="@+id/spB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="2">
+    </Spinner>
+
+    <ImageButton
+        android:id="@+id/swapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="fill"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        android:onClick="swapValute"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_columnSpan="3"
+        android:text="Для пересчета суммы нажимайте ввод после изменения значения" />
+
+    <TextView
+        android:id="@+id/tvA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:text="Валюта А" />
+
+    <TextView
+        android:id="@+id/tvB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:text="ВалютаB" />
+
+
+</GridLayout>
